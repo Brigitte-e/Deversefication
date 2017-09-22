@@ -13,6 +13,7 @@ const Currency = require('../models/Currency');
 const PercentageAvarage = require('../models/PercantageAVG');
 const TotalAVG = require('../models/TotalAVG');
 const Risk = require('../models/Risk');
+const Matrix = require('../models/Matrix');
 
 // Local Backup - first start on server
 // const CurrensiesBackup = JSON.parse(fs.readFileSync(__dirname + '/../config/currencies_full.json', 'utf-8'));
@@ -31,6 +32,7 @@ router.route('/regenerate/collections')
         await splitAllCurrenciesToAnotherCollection(); // -- move currencies to another Collection
         await callCalculatePercentage(); // -- calculate percent(%) for all currencies
         await calculateSumOfPercentForAllCurrencies(); // -- calc SUM of %
+        await calculateMatrix();
         res.json({ msg: "OK.. Regenerate Collections" })
     });
 
@@ -41,10 +43,68 @@ router.route('/test/getPercents')
         res.json({
             currency: avaragePercentsForCurrency
         })
+    })
 
+router.route('/test/getPercentSumm')
+    .get(async (req, res, next) => {
+        res.json({
+            result: await TotalAVG.find({})
+        })
+    })
+
+router.route('/test/generateMatrix')
+    .get(async (req, res, next) => {
+        await calculateMatrix()
+        res.json('OK');
     })
 
 module.exports = router;
+// Start calc matrix
+async function calculateMatrix() {
+    try{
+        let currecnyArr1 = ['USD', 'EUR', 'RUB', 'CZK', 'GBP', 'PLZ', 'SEK', 'SKK', 'HUF', 'CAD', 'ILS', 'JPY'];
+        let currecnyArr2 = ['USD', 'EUR', 'RUB', 'CZK', 'GBP', 'PLZ', 'SEK', 'SKK', 'HUF', 'CAD', 'ILS', 'JPY'];
+        let totalLength = await PercentageAvarage.count({currency: 'USD'});
+        await Matrix.remove({}); // Remove all documents before save
+        return await Promise.all(currecnyArr1.map(async function (currency) {
+            return await Promise.all(currecnyArr2.map(async function (currencyToCompare) {
+                
+                await calcResult(currency, currencyToCompare, totalLength);
+            }));
+        }));
+    } catch(err){console.error(err);}
+    
+}
+
+async function calcResult(currencyStable, currencyChange, totalLength) {
+    let stableTotalAVG = await TotalAVG.findOne({currency: currencyStable});
+    let changeTotalAVG = await TotalAVG.findOne({currency: currencyChange});
+    
+    //console.log(stableTotalAVG.currency + " " + changeTotalAVG.currency + " " + totalLength)
+
+    let currencyFirst = await PercentageAvarage.find({currency: currencyStable });
+    let currencyComp = await PercentageAvarage.find({currency: currencyChange });
+
+    let array1 = [];
+    //console.log(currencyFirst.length)
+    return await Promise.all(currencyFirst.map(async function(value, index) {
+        array1.push((value.percentValue - stableTotalAVG.summa) * (currencyComp[index].percentValue - changeTotalAVG.summa));
+
+        if(currencyFirst.length - 1 === index) {
+            // Do all code
+            let summ1 = array1.reduce((a, b) => a+b, 0);
+            let summResult = (1 / totalLength) * summ1;
+
+            console.log(currencyStable + '-' + currencyChange + ' : ' + summResult);
+            let newMatrix = new Matrix({
+                keycurrency: currencyStable + '-' + currencyChange,
+                result: summResult
+            });
+
+            await newMatrix.save();
+        }
+    }));
+}
 
 // Start -- Risk
 async function calculateRisk() {
