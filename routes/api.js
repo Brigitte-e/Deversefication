@@ -54,11 +54,32 @@ router.route('/test/getPercentSumm')
 
 router.route('/test/generateMatrix')
     .get(async (req, res, next) => {
-        await calculateMatrix()
-        res.json('OK');
+       
+        res.json({
+            curr:  await createStaticMatrix("USD")
+        });
     })
 
 module.exports = router;
+
+// -- Start 
+async function createStaticMatrix(key) {
+    try {
+        let keyMatrix = await Matrix.find({}); //keycurrency: new RegExp("^"+key, "i")
+        console.log(keyMatrix);   
+
+        // http://mathhelpplanet.com/viewtopic.php?f=44&t=22390
+
+        return keyMatrix.sort(function(a, b) {
+            if(a.keycurrency < b.keycurrency) return -1;
+            if(a.keycurrency > b.keycurrency) return 1;
+            return 0;
+        });
+    } catch (err) {console.error(err);}
+}
+
+// - END
+
 // Start calc matrix
 async function calculateMatrix() {
     try{
