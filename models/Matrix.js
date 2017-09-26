@@ -4,6 +4,8 @@ const Schema = mongoose.Schema;
 
 const matrixSchema = new Schema({
     keycurrency: String,
+	maincurrency: String,
+	subcurrency: String,
     result: Number
 });
 

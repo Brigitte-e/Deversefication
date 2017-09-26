@@ -28,6 +28,8 @@ router.route('/test')
 
 router.route('/regenerate/collections')
     .get(async (req, res, next) => {
+		let newFull = new Currency_full();
+		await newFull.save();
         await getAllCurrencies();// -- remove collection with 0 rate length
         await splitAllCurrenciesToAnotherCollection(); // -- move currencies to another Collection
         await callCalculatePercentage(); // -- calculate percent(%) for all currencies
@@ -52,27 +54,42 @@ router.route('/test/getPercentSumm')
         })
     })
 
-router.route('/test/generateMatrix')
-    .get(async (req, res, next) => {
-       
+router.route('/generateMatrix/:currency')
+    .get(async (req, res, next) => {	
+		let matrixArr = await createStaticMatrix(req.params.currency.toUpperCase());
+		let total = await TotalAVG.find({currency: req.params.currency.toUpperCase()});
+		
+		if(matrixArr.length === 0) {
+			return res.json({
+				msg: 'Currency is not defined'
+			})
+		}
+		
+		await matrixArr.sort(function(a, b) {
+			if(a.subcurrency < b.subcurrency) return -1;
+            if(a.subcurrency > b.subcurrency) return 1;
+            return 0;
+		});
+		
         res.json({
-            curr:  await createStaticMatrix("USD")
+            curr: matrixArr,
+			total: total
         });
     })
 
 module.exports = router;
 
 // -- Start 
-async function createStaticMatrix(key) {
+async function createStaticMatrix(currency) {
     try {
-        let keyMatrix = await Matrix.find({}); //keycurrency: new RegExp("^"+key, "i")
-        console.log(keyMatrix);   
+        let keyMatrix = await Matrix.find({maincurrency: currency}); //keycurrency: new RegExp("^"+key, "i")
+        // console.log(keyMatrix);   
 
         // http://mathhelpplanet.com/viewtopic.php?f=44&t=22390
 
         return keyMatrix.sort(function(a, b) {
-            if(a.keycurrency < b.keycurrency) return -1;
-            if(a.keycurrency > b.keycurrency) return 1;
+            if(a.maincurrency < b.maincurrency) return -1;
+            if(a.maincurrency > b.maincurrency) return 1;
             return 0;
         });
     } catch (err) {console.error(err);}
@@ -119,6 +136,8 @@ async function calcResult(currencyStable, currencyChange, totalLength) {
             console.log(currencyStable + '-' + currencyChange + ' : ' + summResult);
             let newMatrix = new Matrix({
                 keycurrency: currencyStable + '-' + currencyChange,
+				maincurrency: currencyStable,
+				subcurrency: currencyChange,
                 result: summResult
             });
 
