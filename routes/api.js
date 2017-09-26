@@ -77,6 +77,19 @@ router.route('/generateMatrix/:currency')
         });
     })
 
+    router.route('/statistics')
+        .get(async(req, res, next) => {
+
+            let risk = await Risk.find({});
+            let totalAvg = await TotalAVG.find({});
+
+            res.json({
+                risk: risk,
+                totalavg: totalAvg
+            })
+
+        });
+
 module.exports = router;
 
 // -- Start 
