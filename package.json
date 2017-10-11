@@ -4,7 +4,7 @@
   "description": "Natya diploma project",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "node app.js",
     "build": "node app.js"
   },
   "keywords": [
