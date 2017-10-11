@@ -351,10 +351,6 @@ async function getAllCurrencies() {
     let previousResult;
     return await Promise.all(currencies.map(async function (currency) {
         if (currency.exchangeRate.length === 0) {
-            previousResult.date = currency.date;
-            let newCurrency = new Currency_full(previousResult);
-            newCurrency.date = await currency.date;
-            await newCurrency.save();
             await Currency_full.findByIdAndRemove({ _id: currency.id });
         } else {
             previousResult = currency;
