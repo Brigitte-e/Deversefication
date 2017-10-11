@@ -18,6 +18,12 @@ const apiRoutes = require('./routes/api');
 
 app.use('/api', apiRoutes);
 
+app.get('/', (req, res) => {
+    res.json({
+        message: "It works"
+    })
+});
+
 const port = PORT || 3000;
 
 app.listen(port, (req, res) => {
