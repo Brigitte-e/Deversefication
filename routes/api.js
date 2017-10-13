@@ -26,7 +26,7 @@ router.route('/test')
         });
     });
 
-router.route('/regenerate/collections')
+router.route('/asdasdadasdasdasdsadregenerate/collections')
     .get(async (req, res, next) => {
 		let newFull = new Currency_full();
 		
