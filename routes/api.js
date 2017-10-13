@@ -29,6 +29,7 @@ router.route('/test')
 router.route('/regenerate/collections')
     .get(async (req, res, next) => {
 		let newFull = new Currency_full();
+		
 		await newFull.save();
         await getAllCurrencies();// -- remove collection with 0 rate length
         await splitAllCurrenciesToAnotherCollection(); // -- move currencies to another Collection
