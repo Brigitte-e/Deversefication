@@ -1,0 +1,1152 @@
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d304f96d23f0949804"),
+	"keycurrency" : "SEK-GBP",
+	"maincurrency" : "SEK",
+	"result" : 0.013552994812356018,
+	"subcurrency" : "GBP"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d304f96d23f0949808"),
+	"keycurrency" : "CAD-RUB",
+	"maincurrency" : "CAD",
+	"result" : 1.5370673405155628,
+	"subcurrency" : "RUB"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d304f96d23f0949807"),
+	"keycurrency" : "HUF-JPY",
+	"maincurrency" : "HUF",
+	"result" : -0.028414589039256772,
+	"subcurrency" : "JPY"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d304f96d23f0949806"),
+	"keycurrency" : "PLZ-CAD",
+	"maincurrency" : "PLZ",
+	"result" : 1.62665821109885,
+	"subcurrency" : "CAD"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d304f96d23f0949805"),
+	"keycurrency" : "SKK-EUR",
+	"maincurrency" : "SKK",
+	"result" : -0.13182806434482708,
+	"subcurrency" : "EUR"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d404f96d23f0949809"),
+	"keycurrency" : "CAD-CAD",
+	"maincurrency" : "CAD",
+	"result" : 1.7633980673040042,
+	"subcurrency" : "CAD"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d404f96d23f094980a"),
+	"keycurrency" : "RUB-JPY",
+	"maincurrency" : "RUB",
+	"result" : 1.5620652425873298,
+	"subcurrency" : "JPY"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d404f96d23f094980e"),
+	"keycurrency" : "JPY-SEK",
+	"maincurrency" : "JPY",
+	"result" : 0.08349679832326856,
+	"subcurrency" : "SEK"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d404f96d23f094980f"),
+	"keycurrency" : "EUR-ILS",
+	"maincurrency" : "EUR",
+	"result" : 0.013045738890497479,
+	"subcurrency" : "ILS"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d404f96d23f0949813"),
+	"keycurrency" : "SEK-CAD",
+	"maincurrency" : "SEK",
+	"result" : 0.04507247987186998,
+	"subcurrency" : "CAD"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d404f96d23f0949814"),
+	"keycurrency" : "USD-HUF",
+	"maincurrency" : "USD",
+	"result" : -0.04570091949531411,
+	"subcurrency" : "HUF"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d404f96d23f0949818"),
+	"keycurrency" : "EUR-RUB",
+	"maincurrency" : "EUR",
+	"result" : 1.483369331257391,
+	"subcurrency" : "RUB"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d404f96d23f0949819"),
+	"keycurrency" : "HUF-GBP",
+	"maincurrency" : "HUF",
+	"result" : -0.653412816052735,
+	"subcurrency" : "GBP"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d404f96d23f094980c"),
+	"keycurrency" : "EUR-GBP",
+	"maincurrency" : "EUR",
+	"result" : -0.04499827370518714,
+	"subcurrency" : "GBP"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d404f96d23f0949811"),
+	"keycurrency" : "USD-SEK",
+	"maincurrency" : "USD",
+	"result" : 0.051132002621166614,
+	"subcurrency" : "SEK"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d404f96d23f0949816"),
+	"keycurrency" : "USD-EUR",
+	"maincurrency" : "USD",
+	"result" : 1.5388366770189608,
+	"subcurrency" : "EUR"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d404f96d23f094981b"),
+	"keycurrency" : "ILS-CAD",
+	"maincurrency" : "ILS",
+	"result" : -0.01210887055340636,
+	"subcurrency" : "CAD"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d404f96d23f094980d"),
+	"keycurrency" : "ILS-USD",
+	"maincurrency" : "ILS",
+	"result" : -0.041644647734037706,
+	"subcurrency" : "USD"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d404f96d23f0949812"),
+	"keycurrency" : "CAD-ILS",
+	"maincurrency" : "CAD",
+	"result" : -0.01210887055340636,
+	"subcurrency" : "ILS"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d404f96d23f0949817"),
+	"keycurrency" : "EUR-CAD",
+	"maincurrency" : "EUR",
+	"result" : 1.6120685175051042,
+	"subcurrency" : "CAD"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d404f96d23f094980b"),
+	"keycurrency" : "HUF-CAD",
+	"maincurrency" : "HUF",
+	"result" : -0.07887660293108932,
+	"subcurrency" : "CAD"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d404f96d23f0949810"),
+	"keycurrency" : "CZK-SKK",
+	"maincurrency" : "CZK",
+	"result" : 0.09821025723808577,
+	"subcurrency" : "SKK"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d404f96d23f0949815"),
+	"keycurrency" : "RUB-SKK",
+	"maincurrency" : "RUB",
+	"result" : -0.1995048875718114,
+	"subcurrency" : "SKK"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d404f96d23f094981a"),
+	"keycurrency" : "PLZ-JPY",
+	"maincurrency" : "PLZ",
+	"result" : 1.614295928258396,
+	"subcurrency" : "JPY"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f094981c"),
+	"keycurrency" : "ILS-PLZ",
+	"maincurrency" : "ILS",
+	"result" : 0.006041889645630676,
+	"subcurrency" : "PLZ"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f094981d"),
+	"keycurrency" : "PLZ-USD",
+	"maincurrency" : "PLZ",
+	"result" : 1.5353361523522457,
+	"subcurrency" : "USD"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f094981e"),
+	"keycurrency" : "RUB-CZK",
+	"maincurrency" : "RUB",
+	"result" : -0.029478269781532788,
+	"subcurrency" : "CZK"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f094981f"),
+	"keycurrency" : "CAD-GBP",
+	"maincurrency" : "CAD",
+	"result" : -0.04025950730360359,
+	"subcurrency" : "GBP"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949820"),
+	"keycurrency" : "ILS-HUF",
+	"maincurrency" : "ILS",
+	"result" : -0.6136956598137867,
+	"subcurrency" : "HUF"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949821"),
+	"keycurrency" : "RUB-HUF",
+	"maincurrency" : "RUB",
+	"result" : -0.058255616741515734,
+	"subcurrency" : "HUF"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949822"),
+	"keycurrency" : "PLZ-GBP",
+	"maincurrency" : "PLZ",
+	"result" : -0.06136896470801575,
+	"subcurrency" : "GBP"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949823"),
+	"keycurrency" : "RUB-CAD",
+	"maincurrency" : "RUB",
+	"result" : 1.5370673405155628,
+	"subcurrency" : "CAD"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949824"),
+	"keycurrency" : "CAD-USD",
+	"maincurrency" : "CAD",
+	"result" : 1.4940750934238185,
+	"subcurrency" : "USD"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949825"),
+	"keycurrency" : "SEK-CZK",
+	"maincurrency" : "SEK",
+	"result" : -0.0018086052003596213,
+	"subcurrency" : "CZK"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949826"),
+	"keycurrency" : "GBP-PLZ",
+	"maincurrency" : "GBP",
+	"result" : -0.06136896470801575,
+	"subcurrency" : "PLZ"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949827"),
+	"keycurrency" : "GBP-EUR",
+	"maincurrency" : "GBP",
+	"result" : -0.04499827370518714,
+	"subcurrency" : "EUR"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949828"),
+	"keycurrency" : "USD-SKK",
+	"maincurrency" : "USD",
+	"result" : -0.12744607320190715,
+	"subcurrency" : "SKK"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949829"),
+	"keycurrency" : "GBP-GBP",
+	"maincurrency" : "GBP",
+	"result" : 1.8540644425547133,
+	"subcurrency" : "GBP"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f094982a"),
+	"keycurrency" : "SKK-CZK",
+	"maincurrency" : "SKK",
+	"result" : 0.09821025723808577,
+	"subcurrency" : "CZK"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f094982b"),
+	"keycurrency" : "PLZ-CZK",
+	"maincurrency" : "PLZ",
+	"result" : 0.007776741675453787,
+	"subcurrency" : "CZK"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f094982c"),
+	"keycurrency" : "CZK-PLZ",
+	"maincurrency" : "CZK",
+	"result" : 0.007776741675453787,
+	"subcurrency" : "PLZ"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f094982d"),
+	"keycurrency" : "USD-CAD",
+	"maincurrency" : "USD",
+	"result" : 1.4940750934238185,
+	"subcurrency" : "CAD"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f094982e"),
+	"keycurrency" : "PLZ-HUF",
+	"maincurrency" : "PLZ",
+	"result" : -0.12239115911242279,
+	"subcurrency" : "HUF"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f094982f"),
+	"keycurrency" : "GBP-RUB",
+	"maincurrency" : "GBP",
+	"result" : -0.028058546141728428,
+	"subcurrency" : "RUB"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949830"),
+	"keycurrency" : "HUF-RUB",
+	"maincurrency" : "HUF",
+	"result" : -0.058255616741515734,
+	"subcurrency" : "RUB"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949831"),
+	"keycurrency" : "SKK-HUF",
+	"maincurrency" : "SKK",
+	"result" : 0.06123420867282177,
+	"subcurrency" : "HUF"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949832"),
+	"keycurrency" : "JPY-CZK",
+	"maincurrency" : "JPY",
+	"result" : 0.003829447551658968,
+	"subcurrency" : "CZK"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949833"),
+	"keycurrency" : "SKK-USD",
+	"maincurrency" : "SKK",
+	"result" : -0.12744607320190715,
+	"subcurrency" : "USD"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949834"),
+	"keycurrency" : "RUB-GBP",
+	"maincurrency" : "RUB",
+	"result" : -0.028058546141728428,
+	"subcurrency" : "GBP"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949835"),
+	"keycurrency" : "RUB-SEK",
+	"maincurrency" : "RUB",
+	"result" : 0.08454136946524023,
+	"subcurrency" : "SEK"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949836"),
+	"keycurrency" : "JPY-PLZ",
+	"maincurrency" : "JPY",
+	"result" : 1.614295928258396,
+	"subcurrency" : "PLZ"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949837"),
+	"keycurrency" : "CAD-EUR",
+	"maincurrency" : "CAD",
+	"result" : 1.6120685175051042,
+	"subcurrency" : "EUR"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949838"),
+	"keycurrency" : "CAD-PLZ",
+	"maincurrency" : "CAD",
+	"result" : 1.62665821109885,
+	"subcurrency" : "PLZ"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949839"),
+	"keycurrency" : "EUR-EUR",
+	"maincurrency" : "EUR",
+	"result" : 1.8071721690946472,
+	"subcurrency" : "EUR"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f094983a"),
+	"keycurrency" : "SKK-SKK",
+	"maincurrency" : "SKK",
+	"result" : 130.0198511085706,
+	"subcurrency" : "SKK"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f094983b"),
+	"keycurrency" : "ILS-EUR",
+	"maincurrency" : "ILS",
+	"result" : 0.013045738890497479,
+	"subcurrency" : "EUR"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f094983c"),
+	"keycurrency" : "JPY-HUF",
+	"maincurrency" : "JPY",
+	"result" : -0.028414589039256772,
+	"subcurrency" : "HUF"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f094983d"),
+	"keycurrency" : "ILS-SEK",
+	"maincurrency" : "ILS",
+	"result" : 0.03426659067850579,
+	"subcurrency" : "SEK"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f094983e"),
+	"keycurrency" : "CZK-SEK",
+	"maincurrency" : "CZK",
+	"result" : -0.0018086052003596213,
+	"subcurrency" : "SEK"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f094983f"),
+	"keycurrency" : "PLZ-SEK",
+	"maincurrency" : "PLZ",
+	"result" : 0.06692314832437499,
+	"subcurrency" : "SEK"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949840"),
+	"keycurrency" : "USD-CZK",
+	"maincurrency" : "USD",
+	"result" : 0.032759904990604514,
+	"subcurrency" : "CZK"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949841"),
+	"keycurrency" : "GBP-SKK",
+	"maincurrency" : "GBP",
+	"result" : -0.034083586478219276,
+	"subcurrency" : "SKK"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949842"),
+	"keycurrency" : "HUF-ILS",
+	"maincurrency" : "HUF",
+	"result" : -0.6136956598137867,
+	"subcurrency" : "ILS"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949843"),
+	"keycurrency" : "HUF-HUF",
+	"maincurrency" : "HUF",
+	"result" : 12.069179838543654,
+	"subcurrency" : "HUF"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949844"),
+	"keycurrency" : "HUF-SEK",
+	"maincurrency" : "HUF",
+	"result" : -0.1585370533040509,
+	"subcurrency" : "SEK"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949845"),
+	"keycurrency" : "CZK-RUB",
+	"maincurrency" : "CZK",
+	"result" : -0.029478269781532788,
+	"subcurrency" : "RUB"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949846"),
+	"keycurrency" : "RUB-USD",
+	"maincurrency" : "RUB",
+	"result" : 1.4051584813626128,
+	"subcurrency" : "USD"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949847"),
+	"keycurrency" : "CAD-SEK",
+	"maincurrency" : "CAD",
+	"result" : 0.04507247987186998,
+	"subcurrency" : "SEK"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949848"),
+	"keycurrency" : "JPY-RUB",
+	"maincurrency" : "JPY",
+	"result" : 1.5620652425873298,
+	"subcurrency" : "RUB"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949849"),
+	"keycurrency" : "USD-ILS",
+	"maincurrency" : "USD",
+	"result" : -0.041644647734037706,
+	"subcurrency" : "ILS"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f094984a"),
+	"keycurrency" : "EUR-SKK",
+	"maincurrency" : "EUR",
+	"result" : -0.13182806434482708,
+	"subcurrency" : "SKK"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f094984b"),
+	"keycurrency" : "CZK-EUR",
+	"maincurrency" : "CZK",
+	"result" : 0.006141036560667681,
+	"subcurrency" : "EUR"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f094984c"),
+	"keycurrency" : "SEK-EUR",
+	"maincurrency" : "SEK",
+	"result" : 0.05750983397244842,
+	"subcurrency" : "EUR"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f094984d"),
+	"keycurrency" : "PLZ-PLZ",
+	"maincurrency" : "PLZ",
+	"result" : 1.9049970870561213,
+	"subcurrency" : "PLZ"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f094984e"),
+	"keycurrency" : "SEK-RUB",
+	"maincurrency" : "SEK",
+	"result" : 0.08454136946524023,
+	"subcurrency" : "RUB"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f094984f"),
+	"keycurrency" : "RUB-EUR",
+	"maincurrency" : "RUB",
+	"result" : 1.483369331257391,
+	"subcurrency" : "EUR"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949850"),
+	"keycurrency" : "GBP-CAD",
+	"maincurrency" : "GBP",
+	"result" : -0.04025950730360359,
+	"subcurrency" : "CAD"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949851"),
+	"keycurrency" : "GBP-HUF",
+	"maincurrency" : "GBP",
+	"result" : -0.653412816052735,
+	"subcurrency" : "HUF"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949852"),
+	"keycurrency" : "JPY-ILS",
+	"maincurrency" : "JPY",
+	"result" : -0.044104633771781726,
+	"subcurrency" : "ILS"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949853"),
+	"keycurrency" : "SEK-ILS",
+	"maincurrency" : "SEK",
+	"result" : 0.03426659067850579,
+	"subcurrency" : "ILS"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949854"),
+	"keycurrency" : "ILS-JPY",
+	"maincurrency" : "ILS",
+	"result" : -0.044104633771781726,
+	"subcurrency" : "JPY"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949855"),
+	"keycurrency" : "CZK-ILS",
+	"maincurrency" : "CZK",
+	"result" : -0.02533369468124845,
+	"subcurrency" : "ILS"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949856"),
+	"keycurrency" : "CZK-USD",
+	"maincurrency" : "CZK",
+	"result" : 0.032759904990604514,
+	"subcurrency" : "USD"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949857"),
+	"keycurrency" : "ILS-ILS",
+	"maincurrency" : "ILS",
+	"result" : 4.464490736732984,
+	"subcurrency" : "ILS"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949858"),
+	"keycurrency" : "JPY-GBP",
+	"maincurrency" : "JPY",
+	"result" : -0.0390479967634614,
+	"subcurrency" : "GBP"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f0949859"),
+	"keycurrency" : "USD-USD",
+	"maincurrency" : "USD",
+	"result" : 1.5513201944959536,
+	"subcurrency" : "USD"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d704f96d23f094985a"),
+	"keycurrency" : "RUB-PLZ",
+	"maincurrency" : "RUB",
+	"result" : 1.5328042690676635,
+	"subcurrency" : "PLZ"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f094985b"),
+	"keycurrency" : "EUR-SEK",
+	"maincurrency" : "EUR",
+	"result" : 0.05750983397244842,
+	"subcurrency" : "SEK"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f094985c"),
+	"keycurrency" : "JPY-JPY",
+	"maincurrency" : "JPY",
+	"result" : 2.4196170777916213,
+	"subcurrency" : "JPY"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f094985d"),
+	"keycurrency" : "SKK-RUB",
+	"maincurrency" : "SKK",
+	"result" : -0.1995048875718114,
+	"subcurrency" : "RUB"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f094985e"),
+	"keycurrency" : "SEK-PLZ",
+	"maincurrency" : "SEK",
+	"result" : 0.06692314832437499,
+	"subcurrency" : "PLZ"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f094985f"),
+	"keycurrency" : "USD-JPY",
+	"maincurrency" : "USD",
+	"result" : 1.5238979782996938,
+	"subcurrency" : "JPY"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f0949860"),
+	"keycurrency" : "EUR-JPY",
+	"maincurrency" : "EUR",
+	"result" : 1.6151123747430232,
+	"subcurrency" : "JPY"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f0949861"),
+	"keycurrency" : "USD-GBP",
+	"maincurrency" : "USD",
+	"result" : -0.05509220771254407,
+	"subcurrency" : "GBP"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f0949862"),
+	"keycurrency" : "SEK-USD",
+	"maincurrency" : "SEK",
+	"result" : 0.051132002621166614,
+	"subcurrency" : "USD"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f0949863"),
+	"keycurrency" : "CZK-GBP",
+	"maincurrency" : "CZK",
+	"result" : -0.0839911447212724,
+	"subcurrency" : "GBP"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f0949864"),
+	"keycurrency" : "SEK-HUF",
+	"maincurrency" : "SEK",
+	"result" : -0.1585370533040509,
+	"subcurrency" : "HUF"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f0949865"),
+	"keycurrency" : "ILS-GBP",
+	"maincurrency" : "ILS",
+	"result" : 0.02440641582449253,
+	"subcurrency" : "GBP"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f0949866"),
+	"keycurrency" : "GBP-ILS",
+	"maincurrency" : "GBP",
+	"result" : 0.02440641582449253,
+	"subcurrency" : "ILS"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f0949867"),
+	"keycurrency" : "SKK-GBP",
+	"maincurrency" : "SKK",
+	"result" : -0.034083586478219276,
+	"subcurrency" : "GBP"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f0949868"),
+	"keycurrency" : "USD-RUB",
+	"maincurrency" : "USD",
+	"result" : 1.4051584813626128,
+	"subcurrency" : "RUB"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f0949869"),
+	"keycurrency" : "JPY-SKK",
+	"maincurrency" : "JPY",
+	"result" : -0.022777256997833013,
+	"subcurrency" : "SKK"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f094986a"),
+	"keycurrency" : "EUR-USD",
+	"maincurrency" : "EUR",
+	"result" : 1.5388366770189608,
+	"subcurrency" : "USD"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f094986b"),
+	"keycurrency" : "HUF-PLZ",
+	"maincurrency" : "HUF",
+	"result" : -0.12239115911242279,
+	"subcurrency" : "PLZ"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f094986c"),
+	"keycurrency" : "RUB-RUB",
+	"maincurrency" : "RUB",
+	"result" : 2.697207446522304,
+	"subcurrency" : "RUB"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f094986d"),
+	"keycurrency" : "SEK-JPY",
+	"maincurrency" : "SEK",
+	"result" : 0.08349679832326856,
+	"subcurrency" : "JPY"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f094986e"),
+	"keycurrency" : "EUR-HUF",
+	"maincurrency" : "EUR",
+	"result" : -0.12497996162923136,
+	"subcurrency" : "HUF"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f094986f"),
+	"keycurrency" : "ILS-RUB",
+	"maincurrency" : "ILS",
+	"result" : -0.10455217565037758,
+	"subcurrency" : "RUB"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f0949870"),
+	"keycurrency" : "SKK-PLZ",
+	"maincurrency" : "SKK",
+	"result" : -0.16527014530907394,
+	"subcurrency" : "PLZ"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f0949871"),
+	"keycurrency" : "EUR-PLZ",
+	"maincurrency" : "EUR",
+	"result" : 1.7885042656152679,
+	"subcurrency" : "PLZ"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f0949872"),
+	"keycurrency" : "EUR-CZK",
+	"maincurrency" : "EUR",
+	"result" : 0.006141036560667681,
+	"subcurrency" : "CZK"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f0949873"),
+	"keycurrency" : "HUF-CZK",
+	"maincurrency" : "HUF",
+	"result" : -0.08371183470754362,
+	"subcurrency" : "CZK"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f0949874"),
+	"keycurrency" : "SKK-JPY",
+	"maincurrency" : "SKK",
+	"result" : -0.022777256997833013,
+	"subcurrency" : "JPY"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f0949875"),
+	"keycurrency" : "GBP-SEK",
+	"maincurrency" : "GBP",
+	"result" : 0.013552994812356018,
+	"subcurrency" : "SEK"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f0949876"),
+	"keycurrency" : "JPY-USD",
+	"maincurrency" : "JPY",
+	"result" : 1.5238979782996938,
+	"subcurrency" : "USD"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f0949877"),
+	"keycurrency" : "JPY-CAD",
+	"maincurrency" : "JPY",
+	"result" : 1.5427467424777368,
+	"subcurrency" : "CAD"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f0949878"),
+	"keycurrency" : "CAD-JPY",
+	"maincurrency" : "CAD",
+	"result" : 1.5427467424777368,
+	"subcurrency" : "JPY"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f0949879"),
+	"keycurrency" : "SKK-CAD",
+	"maincurrency" : "SKK",
+	"result" : -0.4918599422678382,
+	"subcurrency" : "CAD"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f094987a"),
+	"keycurrency" : "ILS-CZK",
+	"maincurrency" : "ILS",
+	"result" : -0.02533369468124845,
+	"subcurrency" : "CZK"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f094987b"),
+	"keycurrency" : "CZK-CAD",
+	"maincurrency" : "CZK",
+	"result" : 0.025870412081652232,
+	"subcurrency" : "CAD"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f094987c"),
+	"keycurrency" : "GBP-JPY",
+	"maincurrency" : "GBP",
+	"result" : -0.0390479967634614,
+	"subcurrency" : "JPY"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f094987d"),
+	"keycurrency" : "HUF-SKK",
+	"maincurrency" : "HUF",
+	"result" : 0.06123420867282177,
+	"subcurrency" : "SKK"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f094987e"),
+	"keycurrency" : "GBP-CZK",
+	"maincurrency" : "GBP",
+	"result" : -0.0839911447212724,
+	"subcurrency" : "CZK"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f094987f"),
+	"keycurrency" : "CZK-JPY",
+	"maincurrency" : "CZK",
+	"result" : 0.003829447551658968,
+	"subcurrency" : "JPY"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f0949880"),
+	"keycurrency" : "CZK-CZK",
+	"maincurrency" : "CZK",
+	"result" : 1.8905441014710362,
+	"subcurrency" : "CZK"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f0949881"),
+	"keycurrency" : "CAD-HUF",
+	"maincurrency" : "CAD",
+	"result" : -0.07887660293108932,
+	"subcurrency" : "HUF"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f0949882"),
+	"keycurrency" : "SEK-SEK",
+	"maincurrency" : "SEK",
+	"result" : 1.8211032279166903,
+	"subcurrency" : "SEK"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f0949883"),
+	"keycurrency" : "RUB-ILS",
+	"maincurrency" : "RUB",
+	"result" : -0.10455217565037758,
+	"subcurrency" : "ILS"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f0949884"),
+	"keycurrency" : "PLZ-EUR",
+	"maincurrency" : "PLZ",
+	"result" : 1.7885042656152679,
+	"subcurrency" : "EUR"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f0949885"),
+	"keycurrency" : "CZK-HUF",
+	"maincurrency" : "CZK",
+	"result" : -0.08371183470754362,
+	"subcurrency" : "HUF"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f0949886"),
+	"keycurrency" : "JPY-EUR",
+	"maincurrency" : "JPY",
+	"result" : 1.6151123747430232,
+	"subcurrency" : "EUR"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f0949887"),
+	"keycurrency" : "PLZ-ILS",
+	"maincurrency" : "PLZ",
+	"result" : 0.006041889645630676,
+	"subcurrency" : "ILS"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f0949888"),
+	"keycurrency" : "HUF-EUR",
+	"maincurrency" : "HUF",
+	"result" : -0.12497996162923136,
+	"subcurrency" : "EUR"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f0949889"),
+	"keycurrency" : "USD-PLZ",
+	"maincurrency" : "USD",
+	"result" : 1.5353361523522457,
+	"subcurrency" : "PLZ"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f094988a"),
+	"keycurrency" : "SKK-SEK",
+	"maincurrency" : "SKK",
+	"result" : -0.01608871561641848,
+	"subcurrency" : "SEK"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f094988b"),
+	"keycurrency" : "CAD-CZK",
+	"maincurrency" : "CAD",
+	"result" : 0.025870412081652232,
+	"subcurrency" : "CZK"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f094988d"),
+	"keycurrency" : "SEK-SKK",
+	"maincurrency" : "SEK",
+	"result" : -0.01608871561641848,
+	"subcurrency" : "SKK"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f094988c"),
+	"keycurrency" : "HUF-USD",
+	"maincurrency" : "HUF",
+	"result" : -0.04570091949531411,
+	"subcurrency" : "USD"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f094988e"),
+	"keycurrency" : "CAD-SKK",
+	"maincurrency" : "CAD",
+	"result" : -0.4918599422678382,
+	"subcurrency" : "SKK"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f094988f"),
+	"keycurrency" : "PLZ-RUB",
+	"maincurrency" : "PLZ",
+	"result" : 1.5328042690676635,
+	"subcurrency" : "RUB"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f0949890"),
+	"keycurrency" : "GBP-USD",
+	"maincurrency" : "GBP",
+	"result" : -0.05509220771254407,
+	"subcurrency" : "USD"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f0949891"),
+	"keycurrency" : "PLZ-SKK",
+	"maincurrency" : "PLZ",
+	"result" : -0.16527014530907394,
+	"subcurrency" : "SKK"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f0949892"),
+	"keycurrency" : "ILS-SKK",
+	"maincurrency" : "ILS",
+	"result" : -0.10673331915234625,
+	"subcurrency" : "SKK"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59dde7d904f96d23f0949893"),
+	"keycurrency" : "SKK-ILS",
+	"maincurrency" : "SKK",
+	"result" : -0.10673331915234625,
+	"subcurrency" : "ILS"
+},

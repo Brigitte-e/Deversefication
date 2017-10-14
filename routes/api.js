@@ -15,17 +15,6 @@ const TotalAVG = require('../models/TotalAVG');
 const Risk = require('../models/Risk');
 const Matrix = require('../models/Matrix');
 
-// Local Backup - first start on server
-// const CurrensiesBackup = JSON.parse(fs.readFileSync(__dirname + '/../config/currencies_full.json', 'utf-8'));
-// JSON.parse()
-router.route('/test')
-    .get(async (req, res, next) => {
-        await calculateRisk();
-        res.json({
-            msg: await Test.find({})
-        });
-    });
-
 router.route('/asdasdadasdasdasdsadregenerate/collections')
     .get(async (req, res, next) => {
 		let newFull = new Currency_full();
@@ -39,59 +28,60 @@ router.route('/asdasdadasdasdasdsadregenerate/collections')
         res.json({ msg: "OK.. Regenerate Collections" })
     });
 
-router.route('/test/getPercents')
+router.route('/generateMatrix/:currencies')
     .get(async (req, res, next) => {
-        let avaragePercentsForCurrency = await PercentageAvarage.find({currency: 'USD'});   
-        
-        res.json({
-            currency: avaragePercentsForCurrency
-        })
-    })
+        console.log(req.params.currencies);
+        console.log(typeof req.params.currencies);
+        //let matrixArray = await createFullStaticMatrix(req.params.currencies);	
+		//let matrixArr = await createStaticMatrix(req.params.currency.toUpperCase());
+		//let total = await TotalAVG.find({currency: req.params.currency.toUpperCase()});
+		
+		// if(matrixArray.length === 0) {
+		// 	return res.json({
+		// 		msg: 'Currency is not defined'
+		// 	})
+		// }
+		
+		// await matrixArray.sort(function(a, b) {
+		// 	if(a.subcurrency < b.subcurrency) return -1;
+  //           if(a.subcurrency > b.subcurrency) return 1;
+  //           return 0;
+		// });
+		
+   //      res.json({
+   //          curr: matrixArray,
+			// total: total
+   //      });
+   res.json({
+    ok: "ll"
+   })
 
-router.route('/test/getPercentSumm')
-    .get(async (req, res, next) => {
-        res.json({
-            result: await TotalAVG.find({})
-        })
-    })
-
-router.route('/generateMatrix/:currency')
-    .get(async (req, res, next) => {	
-		let matrixArr = await createStaticMatrix(req.params.currency.toUpperCase());
-		let total = await TotalAVG.find({currency: req.params.currency.toUpperCase()});
-		
-		if(matrixArr.length === 0) {
-			return res.json({
-				msg: 'Currency is not defined'
-			})
-		}
-		
-		await matrixArr.sort(function(a, b) {
-			if(a.subcurrency < b.subcurrency) return -1;
-            if(a.subcurrency > b.subcurrency) return 1;
-            return 0;
-		});
-		
-        res.json({
-            curr: matrixArr,
-			total: total
-        });
     })
 
     router.route('/statistics')
         .get(async(req, res, next) => {
 
             let risk = await Risk.find({});
-            let totalAvg = await TotalAVG.find({});
+            //let totalAvg = await TotalAVG.find({});
 
             res.json({
                 risk: risk,
-                totalavg: totalAvg
+                //totalavg: totalAvg
             })
 
         });
 
 module.exports = router;
+
+// create Matrix for selected currencies
+async function createFullStaticMatrix(currencies) {
+    let arr = [];
+   for (let i = 0; i < currencies.lenght; i++) {
+        for (let j = 0; j < currencies.lenght; j++) {
+            console.log(currencies[i] + " " + currencies[j]);
+        }
+   }
+}
 
 // -- Start 
 async function createStaticMatrix(currency) {
