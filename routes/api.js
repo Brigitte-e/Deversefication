@@ -51,7 +51,7 @@ router.route('/generateMatrix/:currencies')
         console.log(totalLength, currenciesArray.length);
         let newArray = matrixArray.reduce((acc, curr, i) => {
             if(!(i % totalLength) ) {
-                acc.push(matrixArray.slice(i, i + totalLength));
+                acc.push(matrixArray.slice(i, i + totalLength-1));
             }
             return acc;
         }, []);
