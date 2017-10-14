@@ -30,31 +30,27 @@ router.route('/asdasdadasdasdasdsadregenerate/collections')
 
 router.route('/generateMatrix/:currencies')
     .get(async (req, res, next) => {
-        console.log(req.params.currencies);
-        console.log(typeof req.params.currencies);
-        //let matrixArray = await createFullStaticMatrix(req.params.currencies);	
-		//let matrixArr = await createStaticMatrix(req.params.currency.toUpperCase());
-		//let total = await TotalAVG.find({currency: req.params.currency.toUpperCase()});
+        let currenciesArray = req.params.currencies.split(',');
+
+        let matrixArray = await createFullStaticMatrix(currenciesArray);
+		let total = await TotalAVG.find();
 		
-		// if(matrixArray.length === 0) {
-		// 	return res.json({
-		// 		msg: 'Currency is not defined'
-		// 	})
-		// }
+		if(matrixArray.length === 0) {
+			return res.json({
+				msg: 'Currency is not defined'
+			})
+		}
 		
-		// await matrixArray.sort(function(a, b) {
-		// 	if(a.subcurrency < b.subcurrency) return -1;
-  //           if(a.subcurrency > b.subcurrency) return 1;
-  //           return 0;
-		// });
+		await matrixArray.sort(function(a, b) {
+			if(a.subcurrency < b.subcurrency) return -1;
+            if(a.subcurrency > b.subcurrency) return 1;
+            return 0;
+		});
 		
-   //      res.json({
-   //          curr: matrixArray,
-			// total: total
-   //      });
-   res.json({
-    ok: "ll"
-   })
+        res.json({
+            curr: matrixArray,
+			total: total
+        });
 
     })
 
@@ -62,25 +58,36 @@ router.route('/generateMatrix/:currencies')
         .get(async(req, res, next) => {
 
             let risk = await Risk.find({});
-            //let totalAvg = await TotalAVG.find({});
+            let totalAvg = await TotalAVG.find({});
 
             res.json({
                 risk: risk,
-                //totalavg: totalAvg
+                totalavg: totalAvg
             })
 
         });
 
 module.exports = router;
 
-// create Matrix for selected currencies
+function callback () { console.log('all done'); }
+
 async function createFullStaticMatrix(currencies) {
-    let arr = [];
-   for (let i = 0; i < currencies.lenght; i++) {
-        for (let j = 0; j < currencies.lenght; j++) {
-            console.log(currencies[i] + " " + currencies[j]);
+    let array = [];
+    let matrixByKey = await Matrix.find();
+
+    currencies.forEach(function(currency, i) {
+        if(i < currencies.length -1) {
+            matrixByKey.forEach(function(matrix, j) {
+                console.log("@#" + j);
+                if(matrix.keycurrency === currency) {
+                    array.push(matrixByKey[i]);    
+                }
+            })
         }
-   }
+        
+        console.log("#" + i);
+    })
+    return array;
 }
 
 // -- Start 
