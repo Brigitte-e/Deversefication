@@ -31,7 +31,7 @@ router.route('/asdasdadasdasdasdsadregenerate/collections')
 router.route('/generateMatrix/:currencies')
     .get(async (req, res, next) => {
         let currenciesArray = req.params.currencies.split(',');
-
+        console.log(currenciesArray);
         let matrixArray = await createFullStaticMatrix(currenciesArray);
 		let total = await TotalAVG.find();
 		
@@ -73,14 +73,15 @@ function callback () { console.log('all done'); }
 
 async function createFullStaticMatrix(currencies) {
     let array = [];
-    let matrixByKey = await Matrix.find();
+    let matrixByKey = await Matrix.find({});
 
     currencies.forEach(function(currency, i) {
-        if(i < currencies.length -1) {
+        if(i < currencies.length) {
             matrixByKey.forEach(function(matrix, j) {
                 //console.log("@#" + j);
                 if(matrix.keycurrency === currency) {
-                    array.push(matrixByKey[i]);    
+                    console.log(matrix.keycurrency);
+                    array.push(matrix);    
                 }
             })
         }
