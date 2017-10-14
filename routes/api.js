@@ -85,7 +85,7 @@ async function createFullStaticMatrix(currencies) {
     let matrixByKey = await Matrix.find({});
 
     currencies.forEach(function(currency, i) {
-        if(i < currencies.length-1) {
+        if(i < currencies.length) {
             matrixByKey.forEach(function(matrix, j) {
                 //console.log("@#" + j);
                 if(matrix.keycurrency === currency) {
