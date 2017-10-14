@@ -47,8 +47,17 @@ router.route('/generateMatrix/:currencies')
             return 0;
 		});
 		
+        let totalLength = Math.sqrt(currenciesArray.length);
+        console.log(totalLength, currenciesArray.length);
+        let newArray = matrixArray.reduce((acc, curr, i) => {
+            if(!(i % totalLength) ) {
+                acc.push(matrixArray.slice(i, i + totalLength));
+            }
+            return acc;
+        }, []);
+
         res.json({
-            curr: matrixArray,
+            curr: newArray,
 			total: total
         });
 
@@ -76,11 +85,10 @@ async function createFullStaticMatrix(currencies) {
     let matrixByKey = await Matrix.find({});
 
     currencies.forEach(function(currency, i) {
-        if(i < currencies.length) {
+        if(i < currencies.length-1) {
             matrixByKey.forEach(function(matrix, j) {
                 //console.log("@#" + j);
                 if(matrix.keycurrency === currency) {
-                    console.log(matrix.keycurrency);
                     array.push(matrix);    
                 }
             })
