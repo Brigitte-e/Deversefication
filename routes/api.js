@@ -78,14 +78,14 @@ async function createFullStaticMatrix(currencies) {
     currencies.forEach(function(currency, i) {
         if(i < currencies.length -1) {
             matrixByKey.forEach(function(matrix, j) {
-                console.log("@#" + j);
+                //console.log("@#" + j);
                 if(matrix.keycurrency === currency) {
                     array.push(matrixByKey[i]);    
                 }
             })
         }
         
-        console.log("#" + i);
+        //console.log("#" + i);
     })
     return array;
 }
