@@ -42,8 +42,8 @@ router.route('/generateMatrix/:currencies')
 		}
 		
 		await matrixArray.sort(function(a, b) {
-			if(a.subcurrency < b.subcurrency) return -1;
-            if(a.subcurrency > b.subcurrency) return 1;
+			if(a.maincurrency < b.maincurrency) return -1;
+            if(a.maincurrency > b.maincurrency) return 1;
             return 0;
 		});
 		
