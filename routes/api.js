@@ -82,9 +82,29 @@ router.route('/generateMatrix/:currencies')
 
         });
 
+    router.route('/getCurrencieForToday') 
+        .get(async (req, res, next) => {
+            res.json(await getCurrencieForToday())
+        })
+
 module.exports = router;
 
-function callback () { console.log('all done'); }
+
+async function getCurrencieForToday() {
+    let date = new Date();
+    let object = {};
+    console.log(date)
+    await axios.get('https://api.privatbank.ua/p24api/exchange_rates?json&date='+ (date.getDate() > 5 ? date.getDate()-3 : 1) + '.' + (date.getMonth()+1) + '.' + date.getFullYear())
+        .then(function (response) {
+            object = response.data;
+        }) 
+        .catch(function (response) {
+            console.log(response);
+        })
+
+    return object;
+}
+
 
 async function createFullStaticMatrix(currencies) {
     let array = [];
