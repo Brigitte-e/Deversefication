@@ -56,12 +56,6 @@ router.route('/generateMatrix/:currencies')
             return acc;
         }, []);
 
-        await newArray.sort(function(a, b) {
-            if(a[2] < b[2]) return -1;
-            if(a[2] > b[2]) return 1;
-            return 0;
-        });
-
         res.json({
             curr: newArray,
 			total: total
