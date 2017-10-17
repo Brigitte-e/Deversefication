@@ -28,12 +28,14 @@ router.route('/asdasdadasdasdasdsadregenerate/collections')
         res.json({ msg: "OK.. Regenerate Collections" })
     });
 
-router.route('/generateMatrix/:currencies')
+router.route('/generateMatrix')
     .get(async (req, res, next) => {
-        let currenciesArray = req.params.currencies.split(',');
+        let currenciesArray = req.query.keyvalue.split(',');
+        let totalArrayParasm = req.query.value.split(',');
         console.log(currenciesArray);
+        console.log(totalArrayParasm);
         let matrixArray = await createFullStaticMatrix(currenciesArray);
-		let total = await TotalAVG.find();
+		let totalArray = await getTotalForEnteredCurrencies(totalArrayParasm);
 		
 		if(matrixArray.length === 0) {
 			return res.json({
@@ -58,7 +60,7 @@ router.route('/generateMatrix/:currencies')
 
         res.json({
             curr: newArray,
-			total: total
+			total: totalArray
         });
 
     })
@@ -80,7 +82,6 @@ router.route('/generateMatrix/:currencies')
         .get(async (req, res, next) => {
             res.json(await getCurrencieForToday())
         })
-
 module.exports = router;
 
 
@@ -99,6 +100,23 @@ async function getCurrencieForToday() {
     return object;
 }
 
+async function getTotalForEnteredCurrencies(currencies) {
+    let array = [];
+    let totalArray = await TotalAVG.find({});
+     currencies.forEach(function(currency, i) {
+        if(i < currencies.length) {
+            totalArray.forEach(function(matrix, j) {
+                console.log(matrix.currency, currency);
+                //console.log("@#" + j);
+                if(matrix.currency === currency) {
+                    array.push(matrix);    
+                }
+            })
+        }
+    })
+    return array;
+
+}
 
 async function createFullStaticMatrix(currencies) {
     let array = [];
