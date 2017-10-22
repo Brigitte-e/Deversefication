@@ -91,9 +91,7 @@ async function getCurrencieForToday() {
     let object = {};
     
     console.log(date)
-//    await axios.get('https://api.privatbank.ua/p24api/exchange_rates?json&date='+ (date.getDate() > 5 ? date.getDate()-3 : 1) + '.' + (date.getMonth()+1) + '.' + date.getFullYear())
-    await axios.get('https://api.privatbank.ua/p24api/exchange_rates?json&date=12.10.2017')
-
+    await axios.get('https://api.privatbank.ua/p24api/exchange_rates?json&date='+ (date.getDate() > 5 ? date.getDate()-3 : 1) + '.' + (date.getMonth()+1) + '.' + date.getFullYear())
         .then(function (response) {
             object = response.data;            
         }) 
