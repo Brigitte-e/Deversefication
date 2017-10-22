@@ -87,7 +87,30 @@ router.route('/generateMatrix')
 
     router.route('/getCurrenciesByLastYear')
         .get(async (req, res, next) => {
-            res.json(await Currency_full.find({"date" : { "$regex": "2017", "$options": "i" }}))
+            let currencies = await Currency.find();
+            let newArr = [];
+            console.log("START");
+            currencies.forEach(function(item, i) {
+                if(item.date.indexOf('2017') !== -1) {
+                    newArr.push(item);
+                }
+            });           
+
+            await newArr.sort(function(a, b) {
+                if(a.currency < b.currency) return -1;
+                if(a.currency > b.currency) return 1;
+                return 0;
+            })
+
+            let finalArr = newArr.reduce((acc, curr, i) => {
+            if(!(i % (newArr.length / 12)) ) {
+                    acc.push(newArr.slice(i, i + (newArr.length / 12)));
+                }   
+                return acc;
+            }, []);
+
+            console.log(finalArr.length);
+            res.json(finalArr)
         })
 
 module.exports = router;

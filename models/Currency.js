@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const currencySchema = new Schema({
-    date: Date,
+    date: String,
     currency: String,
     currencyValue: Number
 });
