@@ -8,6 +8,7 @@ const util = require('util');
 const wait = util.promisify(setTimeout);
 
 const Test = require('../models/Test');
+const Exchange = require('../models/Exchange');
 const Currency_full = require('../models/Currency_full');
 const Currency = require('../models/Currency');
 const PercentageAvarage = require('../models/PercantageAVG');
@@ -84,18 +85,29 @@ router.route('/generateMatrix')
         })
 module.exports = router;
 
-
 async function getCurrencieForToday() {
+
     let date = new Date();
     let object = {};
+    
     console.log(date)
-    await axios.get('https://api.privatbank.ua/p24api/exchange_rates?json&date='+ (date.getDate() > 5 ? date.getDate()-3 : 1) + '.' + (date.getMonth()+1) + '.' + date.getFullYear())
+//    await axios.get('https://api.privatbank.ua/p24api/exchange_rates?json&date='+ (date.getDate() > 5 ? date.getDate()-3 : 1) + '.' + (date.getMonth()+1) + '.' + date.getFullYear())
+    await axios.get('https://api.privatbank.ua/p24api/exchange_rates?json&date=12.10.2017')
+
         .then(function (response) {
-            object = response.data;
+            object = response.data;            
         }) 
         .catch(function (response) {
             console.log(response);
         })
+
+        console.log('length', object.exchangeRate.length);
+        if(object.exchangeRate.length > 0) {
+            await Exchange.remove({});
+            new Exchange(object).save();
+        } else {
+            object = await Exchange.find();
+        }
 
     return object;
 }
