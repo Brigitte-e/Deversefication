@@ -83,14 +83,19 @@ router.route('/generateMatrix')
         .get(async (req, res, next) => {
             res.json(await getCurrencieForToday())
         })
+
+
+    router.route('/getCurrenciesByLastYear')
+        .get(async (req, res, next) => {
+            res.json(await Currency_full.find({"date" : { "$regex": "2017", "$options": "i" }}))
+        })
+
 module.exports = router;
 
 async function getCurrencieForToday() {
 
     let date = new Date();
     let object = {};
-    
-    console.log(date)
     await axios.get('https://api.privatbank.ua/p24api/exchange_rates?json&date='+ (date.getDate() > 5 ? date.getDate()-3 : 1) + '.' + (date.getMonth()+1) + '.' + date.getFullYear())
         .then(function (response) {
             object = response.data;            
