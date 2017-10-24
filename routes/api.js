@@ -132,7 +132,7 @@ async function getCurrencieForToday() {
             await Exchange.remove({});
             new Exchange(object).save();
         } else {
-            object = await Exchange.find();
+            object = await Exchange.findOne();
         }
 
     return object;
