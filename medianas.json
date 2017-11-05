@@ -1,0 +1,72 @@
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59ff1443d1307716b47dc8ce"),
+	"currency" : "HUF",
+	"madianaValue" : 0.08152129999999999
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59ff1443d1307716b47dc8cf"),
+	"currency" : "EUR",
+	"madianaValue" : 25.47824
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59ff1443d1307716b47dc8d0"),
+	"currency" : "GBP",
+	"madianaValue" : 35.168084500000006
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59ff1443d1307716b47dc8d1"),
+	"currency" : "CZK",
+	"madianaValue" : 0.9413415
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59ff1443d1307716b47dc8d2"),
+	"currency" : "SKK",
+	"madianaValue" : 2.730088
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59ff1443d1307716b47dc8d3"),
+	"currency" : "RUB",
+	"madianaValue" : 0.32389500000000004
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59ff1443d1307716b47dc8d4"),
+	"currency" : "PLZ",
+	"madianaValue" : 6.045812
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59ff1443d1307716b47dc8d5"),
+	"currency" : "SEK",
+	"madianaValue" : 2.6682455000000003
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59ff1443d1307716b47dc8d6"),
+	"currency" : "CAD",
+	"madianaValue" : 17.0017235
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59ff1443d1307716b47dc8d7"),
+	"currency" : "ILS",
+	"madianaValue" : 5.590692
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59ff1443d1307716b47dc8d8"),
+	"currency" : "USD",
+	"madianaValue" : 22.3594775
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("59ff1443d1307716b47dc8d9"),
+	"currency" : "JPY",
+	"madianaValue" : 0.18447335
+},
