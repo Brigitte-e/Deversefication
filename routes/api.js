@@ -139,17 +139,63 @@ router.route('/getSpecificData')
             console.log(dispValue.dispersiaValue, totalN)
             obj[dispValue.currency] = ((dispValue.dispersiaValue * totalN) / (totalN - 1))
             vypDispersia.push(obj);
+
             sqrtObj[dispValue.currency] = Math.sqrt(dispValue.dispersiaValue);
             sqrtDyspersia.push(sqrtObj);
         });
 
+        const avgResult = await AvarageResult.find();
+        await avgResult.sort(function(a, b) {
+            if (a.currency < b.currency) return -1;
+            if (a.currency > b.currency) return 1;
+            return 0;
+        });
 
+        const medianaResult = await Mediana.find();
+        await medianaResult.sort(function(a, b) {
+            if (a.currency < b.currency) return -1;
+            if (a.currency > b.currency) return 1;
+            return 0;
+        });
+
+        const quantilResult = await Quantil.find();
+        await quantilResult.sort(function(a, b) {
+            if (a.currency < b.currency) return -1;
+            if (a.currency > b.currency) return 1;
+            return 0;
+        });
+
+        const vybirkaResult = await Vybirca.find();
+        await vybirkaResult.sort(function(a, b) {
+            if (a.currency < b.currency) return -1;
+            if (a.currency > b.currency) return 1;
+            return 0;
+        });
+
+        await dispersiaArr.sort(function(a, b) {
+            if (a.currency < b.currency) return -1;
+            if (a.currency > b.currency) return 1;
+            return 0;
+        });
+
+        await vypDispersia.sort(function(a, b) {
+            if (a < b) return -1;
+            if (a > b) return 1;
+            console.log(a, b);
+            return 0;
+        });
+
+        // await sqrtDyspersia.sort(function(a, b) {
+        //     if (a.currency < b.currency) return -1;
+        //     if (a.currency > b.currency) return 1;
+        //     return 0;
+        // });
 
         res.json({
-            avg_p1: await AvarageResult.find(),
-            mediana_p2: await Mediana.find(),
-            quantil_p3: await Quantil.find(),
-            vybirka_p4: await Vybirca.find(),
+            avg_p1: avgResult,
+            mediana_p2: medianaResult,
+            quantil_p3: quantilResult,
+            vybirka_p4: vybirkaResult,
             dispersia_p5: dispersiaArr,
             vyp_dispersia_p6: vypDispersia,
             sqrt_dyspersia_p7: sqrtDyspersia
