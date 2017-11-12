@@ -142,11 +142,13 @@ router.route('/getSpecificData')
         dispersiaArr.forEach(function(dispValue) {
             let obj = {};
             let sqrtObj = {};
-            console.log(dispValue.dispersiaValue, totalN)
-            obj[dispValue.currency] = ((dispValue.dispersiaValue * totalN) / (totalN - 1))
+            console.log(dispValue.dispersiaValue, totalN);
+            obj["currency"] = dispValue.currency;
+            obj["value"] = ((dispValue.dispersiaValue * totalN) / (totalN - 1))
             vypDispersia.push(obj);
 
-            sqrtObj[dispValue.currency] = Math.sqrt(dispValue.dispersiaValue);
+            sqrtObj["currency"] = dispValue.currency;
+            sqrtObj["value"] = Math.sqrt(dispValue.dispersiaValue);
             sqrtDyspersia.push(sqrtObj);
         });
 
