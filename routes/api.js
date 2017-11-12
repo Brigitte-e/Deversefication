@@ -133,6 +133,12 @@ router.route('/getSpecificData')
         let vypDispersia = [];
         let sqrtDyspersia = [];
 
+        await dispersiaArr.sort(function(a, b) {
+            if (a.currency < b.currency) return -1;
+            if (a.currency > b.currency) return 1;
+            return 0;
+        });
+
         dispersiaArr.forEach(function(dispValue) {
             let obj = {};
             let sqrtObj = {};
@@ -169,19 +175,6 @@ router.route('/getSpecificData')
         await vybirkaResult.sort(function(a, b) {
             if (a.currency < b.currency) return -1;
             if (a.currency > b.currency) return 1;
-            return 0;
-        });
-
-        await dispersiaArr.sort(function(a, b) {
-            if (a.currency < b.currency) return -1;
-            if (a.currency > b.currency) return 1;
-            return 0;
-        });
-
-        await vypDispersia.sort(function(a, b) {
-            if (a < b) return -1;
-            if (a > b) return 1;
-            console.log(a, b);
             return 0;
         });
 
